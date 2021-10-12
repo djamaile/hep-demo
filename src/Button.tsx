@@ -5,7 +5,7 @@ interface Props {
 }
 
 const Button: React.FC<Props> = ({ size }) => {
-  size = 'small';
+  size = 5;
 
   return <button>{size}</button>;
 };
