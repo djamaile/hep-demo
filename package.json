@@ -50,5 +50,15 @@
     "husky": "^7.0.2",
     "lint-staged": "^11.2.3",
     "prettier": "^2.4.1"
+  },
+  "prettier": "@spotify/prettier-config",
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
   }
 }
