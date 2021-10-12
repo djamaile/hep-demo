@@ -4,8 +4,7 @@ interface Props {
   size: string;
 }
 
-const Button: React.FC<Props> = ({ size }) => {
-  size = 5;
-
-  return <button>{size}</button>;
+export const Button: React.FC<Props> = ({ size }) => {
+  const rightSize = size ? 'big' : 'small';
+  return <button type="button">{rightSize}</button>;
 };
